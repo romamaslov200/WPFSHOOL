@@ -26,7 +26,7 @@
         
         
         
-        Title="MainWindow" Height="450" Width="800" Closed="Window_Closed">
+        Title="Title" Height="450" Width="800" Closed="Window_Closed">
     <Border>
         <Grid>
             <Border Background="#292a29" Height="30" VerticalAlignment="Top" CornerRadius="10, 10, 0, 0"/>
@@ -69,7 +69,7 @@
                 </Button>
 
 
-                <Label Content="Прога"
+                <Label Content="Title"
                        Foreground="#fff"
                        HorizontalAlignment="Center"
                        FontSize="20"
@@ -119,6 +119,7 @@
             <Frame x:Name="MainFrame"
                    NavigationUIVisibility="Hidden"
                    Source=""
+                   Navigated="MainFrame_Navigated"
                    Margin="0,30,0,0">
             </Frame>
 

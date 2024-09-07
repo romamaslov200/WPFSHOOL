@@ -43,11 +43,6 @@ namespace WPFSHOOL.Viwes.Pages
             }
         }
 
-        private void Profile_Button_Click(object sender, RoutedEventArgs e)
-        {
-            NavArcCore.ChageFrame(new Home_Page());
-        }
-
         private void home_Button_Click(object sender, RoutedEventArgs e)
         {
             NavArcCore.ChageFrame(new Home_Page());

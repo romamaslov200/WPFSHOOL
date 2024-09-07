@@ -98,5 +98,14 @@ namespace WPFSHOOL
             jsonController.JsonSave(ObjectJson);
             NavArcCore.MainWindow.ResizeMode = ResizeMode.NoResize;
         }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            if (MainFrame.Content is Page page)
+            {
+                NavTitle.Content = page.Title;
+                this.Title = page.Title;
+            }
+        }
     }
 }

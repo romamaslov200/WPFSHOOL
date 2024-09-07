@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:WPFSHOOL.Viwes.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="430" d:DesignWidth="800"
-      Title="Settings_Page"
+      Title="Настройки"
       
       
       xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
@@ -20,23 +20,14 @@
                     HorizontalAlignment="Stretch"
                     VerticalAlignment="Stretch" 
                     CornerRadius="0, 0, 10, 10"/>
-            <Button
-                Style="{DynamicResource BtnNav}"
-                Margin= "-3.5, 0, 0, -0.7"
-                Background="#0000"
-                BorderBrush="#0000"
-                Width="40"
-                Height="64.9"
-                VerticalAlignment="Bottom"
-                Click="Profile_Button_Click"
-                HorizontalAlignment="Left">
-                <Label Content="2"
-                   Foreground="#fff"
-                   FontSize="40"
-                   FontWeight="Bold"
-                   VerticalAlignment="Bottom">
-                </Label>
-            </Button>
+            <Label
+                Margin="10"
+                Content="Настройки"
+                Foreground="#fff"
+                FontSize="40"
+                FontWeight="Bold"
+                VerticalAlignment="Bottom">
+            </Label>
 
 
             <!---->
@@ -94,9 +85,16 @@
                     Grid.Row="1"
                     Grid.Column="1"
                     Orientation="Vertical"
+                    VerticalAlignment="Center"
                     HorizontalAlignment="Center">
 
-                    <CheckBox Content="Маштобирование окна" Name="ResizeMode_CheckBox" Foreground="#fff" Checked="ResizeMode_CheckBox_Checked" Unchecked="ResizeMode_CheckBox_Unchecked"></CheckBox>
+                    <CheckBox Content="Маштобирование окна"
+                              Name="ResizeMode_CheckBox"
+                              Foreground="#fff"
+                              FontSize="20"
+                              Checked="ResizeMode_CheckBox_Checked"
+                              Unchecked="ResizeMode_CheckBox_Unchecked">
+                    </CheckBox>
                 </StackPanel>
             </Grid>
             
