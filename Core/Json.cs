@@ -12,5 +12,11 @@ namespace WPFSHOOL.Core
         public bool ResizeMode { get; set; } = false;
         public short Width { get; set; } = 800;
         public short Height { get; set; } = 450;
+
+        // Языковые параметры
+
+        public string Home_Text { get; set; } = "Главная";
+        public string Stettings_Text { get; set; } = "Настройки";
+        public string ResizeMode_Text { get; set; } = "Масштабирование окна";
     }
 }

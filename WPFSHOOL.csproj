@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="Viwes\Resurces\Images\Exit.svg" />
+    <None Remove="Viwes\Resurces\Images\Flag-RU.svg" />
+    <None Remove="Viwes\Resurces\Images\Flag-UE.svg" />
     <None Remove="Viwes\Resurces\Images\folding.svg" />
     <None Remove="Viwes\Resurces\Images\github.svg" />
     <None Remove="Viwes\Resurces\Images\home.svg" />
@@ -29,6 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Viwes\Resurces\Images\Flag-RU.svg" />
+    <Resource Include="Viwes\Resurces\Images\Flag-UE.svg" />
     <Resource Include="Viwes\Resurces\Images\github.svg" />
     <Resource Include="Viwes\Resurces\Images\home.svg" />
     <Resource Include="Viwes\Resurces\Images\settings.svg" />

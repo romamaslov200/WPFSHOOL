@@ -27,6 +27,8 @@ namespace WPFSHOOL.Viwes.Pages
         JsonController jsonController = new JsonController();
         Json ObjectJson;
 
+        ChangingLanguage changingLanguage = new ChangingLanguage();
+
         public Settings_Page()
         {
             InitializeComponent();
@@ -46,6 +48,19 @@ namespace WPFSHOOL.Viwes.Pages
         private void home_Button_Click(object sender, RoutedEventArgs e)
         {
             NavArcCore.ChageFrame(new Home_Page());
+        }
+
+
+        private void Flag_UE_Button_Click(object sender, RoutedEventArgs e)
+        {
+            changingLanguage.UE();
+            NavArcCore.ChageFrame(new Settings_Page());
+        }
+
+        private void Flag_RU_Button_Click(object sender, RoutedEventArgs e)
+        {
+            changingLanguage.RU();
+            NavArcCore.ChageFrame(new Settings_Page());
         }
 
         private void ResizeMode_CheckBox_Checked(object sender, RoutedEventArgs e)
