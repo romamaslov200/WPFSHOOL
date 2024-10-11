@@ -51,6 +51,8 @@ namespace WPFSHOOL.Viwes.Pages
         }
 
 
+
+        //Смена языка
         private void Flag_UE_Button_Click(object sender, RoutedEventArgs e)
         {
             changingLanguage.UE();
@@ -62,7 +64,11 @@ namespace WPFSHOOL.Viwes.Pages
             changingLanguage.RU();
             NavArcCore.ChageFrame(new Settings_Page());
         }
+        //
 
+
+
+        // Настройка ресайс мода
         private void ResizeMode_CheckBox_Checked(object sender, RoutedEventArgs e)
         {
             ObjectJson.ResizeMode = true;
@@ -76,5 +82,6 @@ namespace WPFSHOOL.Viwes.Pages
             jsonController.JsonSave(ObjectJson);
             NavArcCore.MainWindow.ResizeMode = ResizeMode.NoResize;
         }
+        //
     }
 }
